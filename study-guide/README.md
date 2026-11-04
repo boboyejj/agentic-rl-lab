@@ -348,6 +348,8 @@ A substring grader gets "hacked" by hedging (training reward 1.0, true accuracy 
 
 ## Phase 8: Capstone: build your own agentic RL task (2–4 weeks)
 
+Planning a domain research agent? See the worked example for catalysis: [`catalyst-research-agent/`](./catalyst-research-agent/README.md).
+
 Copy the Search-R1 layout (`protocol.py`, `rollout.py`, `reward.py`, `train.py`, `eval.py`, `analyse.py`) and swap in your own environment:
 
 1. **Pick a task with a checkable outcome**: SQL against a test DB, unit tests passing, an API returning the right value, a game score, a schema-valid JSON.
