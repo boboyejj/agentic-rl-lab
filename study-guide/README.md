@@ -51,6 +51,8 @@ training_client.optim_step(adam_params)                                     # up
 
 You never touch FSDP, vLLM or Ray. What's left is the algorithm: the data, reward, advantage, mask and loss. That is what you're here to learn.
 
+**Using Tinker instead of PyTRIO?** See [`tinker/`](./tinker/README.md). It has a working Tinker port of the GRPO experiment and a cheat sheet for porting the other chapters.
+
 **Cost note:** the labs here are free. The real experiments need a PyTRIO account and credits. The chapter titles give cost hints: "two Luckin coffees for ReTool", "a Crazy-Thursday KFC meal for OPSD", "a McDonald's breakfast for Jev", "5 RMB for Vision GRPO". Always do the smoke-test commands in each `start.md` first.
 
 ---
