@@ -1,0 +1,8 @@
+# Private data: never commit the real expert config, harvested corpus or extraction outputs.
+experts.toml
+experts.saf.toml
+corpus/
+corpus_*/
+*.jsonl
+pairs*.csv
+*.key.json

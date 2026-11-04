@@ -2,6 +2,8 @@
 
 This tailors the [general catalysis plan](./README.md) to **heterogeneous catalysis / zeolite synthesis**. The general plan still holds for data hygiene, reward design and the budget formula. This file covers what changes.
 
+Follow-ups: [expert-distillation.md](./expert-distillation.md) (corpus, rubrics and critique data from leading groups' published work) and [saf-plan.md](./saf-plan.md) (sustainable aviation fuel extension).
+
 Context used: Tsapatsis-group-style research themes (MFI and other framework syntheses, 2D zeolite nanosheets, OSDA-free and direct nanosheet syntheses, zeolite membranes for separations such as xylene isomers, catalytic applications).
 
 ---

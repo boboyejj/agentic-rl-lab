@@ -1,0 +1,112 @@
+# Expert list for the zeolite-synthesis corpus. Copy to experts.toml (keep that file private).
+#
+# These are CANDIDATES chosen from the published literature on the themes below. Names and
+# institution hints are starting points only: affiliations change, and OpenAlex may split one
+# person into several profiles. Run `build_expert_corpus.py resolve`, check each candidate, then
+# paste every correct OpenAlex author ID into openalex_ids (or set orcid).
+#
+# consent:  "published-only"  -> we use their published, attributed work only (default)
+#           "participating"   -> they agreed to give feedback (only your advisor/collaborators)
+#
+# Tiers (section 2 of expert-distillation.md):
+#   tier 1 = your own group / advisor (highest weight, can give feedback)
+#   tier 2 = core field leaders on your exact themes
+#   tier 3 = adjacent expertise you want the agent to "think like" for specific dimensions
+
+[settings]
+from_year = 2000
+
+# ---- tier 1: your group (fill in) ------------------------------------------------------
+[[expert]]
+key = "advisor"
+name = "YOUR ADVISOR'S NAME"
+institution_hint = "YOUR UNIVERSITY"
+themes = ["zeolite synthesis"]
+topic_terms = ["zeolite", "nanosheet", "membrane", "MFI"]
+consent = "published-only"   # change to "participating" once they agree
+
+# ---- tier 2: 2D zeolites, nanosheets, membranes, crystallization ------------------------
+[[expert]]
+key = "tsapatsis"
+name = "Michael Tsapatsis"
+institution_hint = "Johns Hopkins"
+themes = ["2D zeolites", "MFI nanosheets", "zeolite membranes", "xylene separation"]
+topic_terms = ["zeolite", "nanosheet", "membrane", "MFI", "layered", "xylene"]
+
+[[expert]]
+key = "rimer"
+name = "Jeffrey D. Rimer"
+institution_hint = "Houston"
+themes = ["zeolite crystallization mechanisms", "crystal growth modifiers", "OSDA-free synthesis"]
+topic_terms = ["zeolite", "crystallization", "crystal growth", "nucleation"]
+
+[[expert]]
+key = "ryoo"
+name = "Ryong Ryoo"
+institution_hint = "KAIST"
+themes = ["MFI nanosheets", "hierarchical zeolites", "surfactant-directed synthesis"]
+topic_terms = ["zeolite", "nanosheet", "mesoporous", "hierarchical"]
+
+[[expert]]
+key = "cejka"
+name = "Jiří Čejka"
+institution_hint = "Charles University"
+themes = ["2D zeolites", "ADOR", "layered zeolite catalysis"]
+topic_terms = ["zeolite", "layered", "two-dimensional", "ADOR", "catalys"]
+
+[[expert]]
+key = "roth"
+name = "Wieslaw J. Roth"
+institution_hint = "Jagiellonian"
+themes = ["layered zeolite precursors", "MWW", "pillaring and delamination"]
+topic_terms = ["zeolite", "layered", "MWW", "delaminat", "pillar"]
+
+[[expert]]
+key = "davis"
+name = "Mark E. Davis"
+institution_hint = "California Institute of Technology"
+themes = ["OSDA design", "new framework synthesis", "zeolite catalysis"]
+topic_terms = ["zeolite", "molecular sieve", "structure-directing"]
+
+[[expert]]
+key = "corma"
+name = "Avelino Corma"
+institution_hint = "Valencia"
+themes = ["zeolite synthesis and catalysis", "industrial catalysis"]
+topic_terms = ["zeolite", "molecular sieve", "catalys"]
+
+[[expert]]
+key = "valtchev"
+name = "Valentin Valtchev"
+institution_hint = "Caen"
+themes = ["nanosized zeolites", "zeolite films", "post-synthesis modification"]
+topic_terms = ["zeolite", "nanosized", "film", "crystallization"]
+
+[[expert]]
+key = "nair"
+name = "Sankar Nair"
+institution_hint = "Georgia Institute of Technology"
+themes = ["zeolite and MOF membranes", "membrane fabrication and scale-up"]
+topic_terms = ["membrane", "zeolite", "separation"]
+
+# ---- tier 3: adjacent expertise -----------------------------------------------------------
+[[expert]]
+key = "perez_ramirez"
+name = "Javier Pérez-Ramírez"
+institution_hint = "ETH Zurich"
+themes = ["hierarchical zeolites", "catalyst scale-up", "benchmarking"]
+topic_terms = ["zeolite", "hierarchical", "desilication", "catalys"]
+
+[[expert]]
+key = "gounder"
+name = "Rajamani Gounder"
+institution_hint = "Purdue"
+themes = ["active-site characterization in zeolites", "kinetics", "Al siting"]
+topic_terms = ["zeolite", "chabazite", "kinetic", "acid site", "aluminum"]
+
+[[expert]]
+key = "gomez_bombarelli"
+name = "Rafael Gómez-Bombarelli"
+institution_hint = "Massachusetts Institute of Technology"
+themes = ["computational OSDA design", "ML for zeolite synthesis"]
+topic_terms = ["zeolite", "structure-directing", "machine learning", "template"]

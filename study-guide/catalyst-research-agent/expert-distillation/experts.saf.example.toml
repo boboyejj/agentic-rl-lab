@@ -1,0 +1,76 @@
+# Expert candidates for the later sustainable-aviation-fuel (SAF) extension.
+# Same rules as experts.example.toml: verify each profile with `resolve` before harvesting.
+# Topic terms are deliberately SAF-specific so their non-SAF work is flagged off_topic.
+
+[settings]
+from_year = 2005
+
+[[expert]]
+key = "heyne"
+name = "Joshua S. Heyne"
+institution_hint = "Washington State"
+themes = ["jet fuel properties", "SAF prescreening", "fuel composition-property models"]
+topic_terms = ["jet fuel", "aviation", "sustainable aviation", "fuel properties", "kerosene"]
+
+[[expert]]
+key = "martens"
+name = "Johan A. Martens"
+institution_hint = "Leuven"
+themes = ["bifunctional hydroisomerization/hydrocracking", "shape selectivity"]
+topic_terms = ["hydroisomerization", "hydrocracking", "bifunctional", "alkane", "zeolite"]
+
+[[expert]]
+key = "de_jong"
+name = "Krijn P. de Jong"
+institution_hint = "Utrecht"
+themes = ["Fischer-Tropsch catalysis", "bifunctional catalysts", "metal-acid proximity"]
+topic_terms = ["Fischer", "hydrocracking", "bifunctional", "cobalt", "zeolite"]
+
+[[expert]]
+key = "resasco"
+name = "Daniel E. Resasco"
+institution_hint = "Oklahoma"
+themes = ["biomass upgrading", "zeolite catalysis for fuels"]
+topic_terms = ["biomass", "fuel", "zeolite", "deoxygenation", "jet"]
+
+[[expert]]
+key = "crossley"
+name = "Steven P. Crossley"
+institution_hint = "Oklahoma"
+themes = ["zeolite catalysis", "C-C coupling for fuels"]
+topic_terms = ["zeolite", "fuel", "coupling", "jet", "alkene"]
+
+[[expert]]
+key = "huber"
+name = "George W. Huber"
+institution_hint = "Wisconsin"
+themes = ["biomass to fuels", "catalytic process design"]
+topic_terms = ["biomass", "fuel", "jet", "hydrodeoxygenation", "zeolite"]
+
+[[expert]]
+key = "lercher"
+name = "Johannes A. Lercher"
+institution_hint = "Technical University of Munich"
+themes = ["zeolite acid catalysis", "hydrodeoxygenation", "alkane chemistry"]
+topic_terms = ["zeolite", "hydrodeoxygenation", "alkane", "acid", "fuel"]
+
+[[expert]]
+key = "dagle_v"
+name = "Vanessa Lebarbier Dagle"
+institution_hint = "Pacific Northwest National Laboratory"
+themes = ["ethanol-to-jet", "olefin oligomerization"]
+topic_terms = ["ethanol", "jet", "oligomerization", "olefin", "butene"]
+
+[[expert]]
+key = "ramasamy"
+name = "Karthikeyan K. Ramasamy"
+institution_hint = "Pacific Northwest National Laboratory"
+themes = ["alcohol-to-jet process development"]
+topic_terms = ["ethanol", "jet", "alcohol", "oligomerization", "fuel"]
+
+[[expert]]
+key = "roman_leshkov"
+name = "Yuriy Román-Leshkov"
+institution_hint = "Massachusetts Institute of Technology"
+themes = ["zeolite catalysis for renewables", "biomass-derived fuels"]
+topic_terms = ["zeolite", "biomass", "fuel", "Lewis acid"]
