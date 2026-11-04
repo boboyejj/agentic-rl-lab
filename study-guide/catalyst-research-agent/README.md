@@ -2,6 +2,8 @@
 
 This plan is for a chemical-engineering researcher working on catalysis who wants to build a research agent and improve it with agentic RL. It builds on this repo: the multi-turn skeleton from `experiments/search-r1`, the code sandbox from `experiments/retool`, LLM-judge rewards from `experiments/tournament-grpo`, the SFT→RL pipeline from `experiments/spec-o3`, and the Tinker port in [`../tinker/`](../tinker/README.md).
 
+> **Zeolite synthesis edition:** see [`zeolite-plan.md`](./zeolite-plan.md) for the version tailored to zeolite synthesis: proposal copilot, lab-data tools, data counts and local deployment.
+
 ---
 
 ## 1. Summary
