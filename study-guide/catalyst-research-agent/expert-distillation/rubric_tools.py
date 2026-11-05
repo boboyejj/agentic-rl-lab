@@ -16,7 +16,7 @@ Standard library only. Works with the outputs of build_expert_corpus.py.
     # 4. Pick the rubric items relevant to one task, in Tournament-GRPO's judge format.
     python rubric_tools.py select --bank rubric_bank.jsonl --query "Aim 2: OSDA-free MFI nanosheets" -k 8
 
-    # 5. Blinded A/B sheet for your advisor, and judge-vs-expert agreement afterwards.
+    # 5. Blinded A/B sheet for you (and optionally a colleague), then judge-vs-human agreement.
     python rubric_tools.py pairs --a sysA.jsonl --b sysB.jsonl --out pairs.csv
     python rubric_tools.py agreement --sheet pairs_filled.csv --key pairs.key.json --judge judge.jsonl
 

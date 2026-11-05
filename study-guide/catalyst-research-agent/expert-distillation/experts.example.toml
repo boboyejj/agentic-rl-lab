@@ -5,25 +5,24 @@
 # person into several profiles. Run `build_expert_corpus.py resolve`, check each candidate, then
 # paste every correct OpenAlex author ID into openalex_ids (or set orcid).
 #
-# consent:  "published-only"  -> we use their published, attributed work only (default)
-#           "participating"   -> they agreed to give feedback (only your advisor/collaborators)
+# consent:  "published-only" (the only mode used in this personal project): we use their
+#           published, attributed work only. Nobody on this list is contacted.
 #
 # Tiers (section 2 of expert-distillation.md):
-#   tier 1 = your own group / advisor (highest weight, can give feedback)
+#   tier 1 = authors whose published work is closest to yours (incl. your own papers, if any)
 #   tier 2 = core field leaders on your exact themes
 #   tier 3 = adjacent expertise you want the agent to "think like" for specific dimensions
 
 [settings]
 from_year = 2000
 
-# ---- tier 1: your group (fill in) ------------------------------------------------------
+# ---- tier 1: closest to your own work (fill in, or delete this entry) ------------------
 [[expert]]
-key = "advisor"
-name = "YOUR ADVISOR'S NAME"
-institution_hint = "YOUR UNIVERSITY"
+key = "closest"
+name = "AUTHOR NAME"
+institution_hint = "INSTITUTION"
 themes = ["zeolite synthesis"]
 topic_terms = ["zeolite", "nanosheet", "membrane", "MFI"]
-consent = "published-only"   # change to "participating" once they agree
 
 # ---- tier 2: 2D zeolites, nanosheets, membranes, crystallization ------------------------
 [[expert]]

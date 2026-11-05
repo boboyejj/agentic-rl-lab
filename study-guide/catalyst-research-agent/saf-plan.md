@@ -147,7 +147,7 @@ These overlaps are also proposal angles: "nanosheet 1D zeolites for selective hy
 |---|---|
 | now (cheap) | harvest the SAF expert list with `build_expert_corpus.py`; write 20 SAF questions you'd actually ask; note SAF angles in your proposals |
 | 21–23 | SAF corpus + reports indexed; new extraction schema; property and spec tools |
-| 24–26 | 10 SAF generators; 100-question SAF eval set; SAF rubric dimensions + advisor/SAF-collaborator calibration |
+| 24–26 | 10 SAF generators; 100-question SAF eval set; SAF rubric dimensions + your calibration pass; SAF published-critique test set |
 | 27–30 | SFT + GRPO continuing from the zeolite adapter, mixed with zeolite tasks |
 | 31–32 | eval; Track C on any SAF catalyst tests (oligomerization/hydroisomerization screening + BO) |
 
