@@ -1,0 +1,2236 @@
+{
+ "label_meaning": {
+  "A_core": "zeolite synthesis, 2D/nanosheet, hierarchical, nanosized, OSDA, crystallization, defects, characterization",
+  "B_adjacent": "zeolite catalysis, kinetics, active sites, scale-up: useful for catalysis/benchmarking criteria",
+  "C_off_theme": "single-atom/general catalysis, CO2, biomass, MOFs, membranes, other fields",
+  "D_talk_or_duplicate": "conference talk abstracts (mostly HAL) or duplicates: little text",
+  "D_not_a_review": "research article, book or book review mislabelled as review"
+ },
+ "docs": [
+  {
+   "idx": 0,
+   "openalex_id": "W7203605891",
+   "doi": "10.1021/acs.chemrev.6c00035",
+   "year": 2026,
+   "title": "A Review of Ammonia (NH3) Adsorption in Porous Solids",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 1,
+   "openalex_id": "W7164204173",
+   "doi": "10.1021/acsami.6c04953",
+   "year": 2026,
+   "title": "Current Understandings and Future Opportunities Related to the Structure Direction in Zeolite Synthesis",
+   "experts": [
+    "rimer",
+    "zones"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 2,
+   "openalex_id": "W7223300893",
+   "doi": "10.1002/anie.4288841",
+   "year": 2026,
+   "title": "From Atoms to Reactors: A Critical Review of a Decade of Machine Learning in Heterogeneous Catalysis (2017\u20132026)",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 3,
+   "openalex_id": "W7222523632",
+   "doi": "10.1021/acs.chemrev.6c00373",
+   "year": 2026,
+   "title": "Mapping Local Environments in Single-Atom Catalysts",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 4,
+   "openalex_id": "W7133228478",
+   "doi": "10.1039/d5cs00473j",
+   "year": 2026,
+   "title": "Molecularly engineered zeolites with extra-large-pore architectures and functional opportunities",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 5,
+   "openalex_id": "W7214221322",
+   "doi": "10.1016/j.chempr.2026.103264",
+   "year": 2026,
+   "title": "The recycle reality: A process-level perspective on catalytic CO2 hydrogenation to methanol",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 6,
+   "openalex_id": "W7165365356",
+   "doi": "10.1093/nsr/nwag383",
+   "year": 2026,
+   "title": "Zeolite membrane reactors for efficient catalytic conversion of CO2 into high-value chemicals",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 7,
+   "openalex_id": "W4406103349",
+   "doi": "10.1080/01614940.2024.2448688",
+   "year": 2025,
+   "title": "Chemical kinetics of heterogeneous catalysis: experimental research methodologies and case studies of site-isolated materials",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 8,
+   "openalex_id": "W4413806380",
+   "doi": "10.1039/9781837676859-00523",
+   "year": 2025,
+   "title": "Future Perspectives of Zeolites",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 9,
+   "openalex_id": "W4414238297",
+   "doi": "10.1038/s41578-025-00839-6",
+   "year": 2025,
+   "title": "Multiscale understanding and precise control of zeolite crystallization",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 10,
+   "openalex_id": "W4414440168",
+   "doi": "10.1016/j.xcrp.2025.102833",
+   "year": 2025,
+   "title": "The future of single-atom catalysis: From academic insights to industrial application",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 11,
+   "openalex_id": "W4412110778",
+   "doi": "10.1039/d5cs00319a",
+   "year": 2025,
+   "title": "Top-down engineering of zeolite porosity",
+   "experts": [
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 12,
+   "openalex_id": "W4402678083",
+   "doi": "10.1039/d4cc04728a",
+   "year": 2024,
+   "title": "Advances and challenges in designing active site environments in zeolites for Br\u00f8nsted acid catalysis",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 13,
+   "openalex_id": "W4400342743",
+   "doi": "10.1039/d3cs00595j",
+   "year": 2024,
+   "title": "One-pot chemo- and photo-enzymatic linear cascade processes",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 14,
+   "openalex_id": "W4402566083",
+   "doi": "10.1021/acssuschemeng.4c04769",
+   "year": 2024,
+   "title": "Prospects of n-Butanol Production from Carbon Dioxide via Ethanol Dimerization",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 15,
+   "openalex_id": "W4391750894",
+   "doi": "10.1002/cctc.202301681",
+   "year": 2024,
+   "title": "Recent Advances in Hydrodeoxygenation of Lignin\u2010Derived Phenolics over Metal\u2010Zeolite Bifunctional Catalysts",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 16,
+   "openalex_id": "W4399968184",
+   "doi": "10.1002/cssc.202400865",
+   "year": 2024,
+   "title": "Technology Readiness and Emerging Prospects of Coupled Catalytic Reactions for Sustainable Chemical Value Chains",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 17,
+   "openalex_id": "W4392793422",
+   "doi": "10.1021/acs.chemrev.3c00801",
+   "year": 2024,
+   "title": "The Current Understanding of Mechanistic Pathways in Zeolite Crystallization",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 18,
+   "openalex_id": "W4393946011",
+   "doi": "10.1002/anie.202318676",
+   "year": 2024,
+   "title": "The Future of Chemical Sciences is Sustainable",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 19,
+   "openalex_id": "W4320709079",
+   "doi": "10.1039/d2cs00456a",
+   "year": 2023,
+   "title": "Advanced zeolite and ordered mesoporous silica-based catalysts for the conversion of CO 2 to chemicals and fuels",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 20,
+   "openalex_id": "W4387451765",
+   "doi": "10.1038/s41570-023-00540-8",
+   "year": 2023,
+   "title": "Advances in heterogeneous single-cluster catalysis",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 21,
+   "openalex_id": "W4361001398",
+   "doi": "10.1021/acs.chemrev.2c00733",
+   "year": 2023,
+   "title": "Bimetallic Sites for Catalysis: From Binuclear Metal Sites to Bimetallic Nanoclusters and Nanoparticles",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 22,
+   "openalex_id": "W4320727642",
+   "doi": "10.1021/acscatal.2c05992",
+   "year": 2023,
+   "title": "Challenges and Opportunities in Engineering the Electronic Structure of Single-Atom Catalysts",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 23,
+   "openalex_id": "W4387392487",
+   "doi": "10.1002/adma.202307341",
+   "year": 2023,
+   "title": "Current State and Perspectives of Exfoliated Zeolites",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 24,
+   "openalex_id": "W4387884400",
+   "doi": "10.1039/d3sc03934j",
+   "year": 2023,
+   "title": "Flexibility in zeolites: origin, limits, and evaluation",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 25,
+   "openalex_id": "W4322012226",
+   "doi": "10.1016/j.micromeso.2023.112511",
+   "year": 2023,
+   "title": "Guiding Phi-Type Zeolite Synthesis from the Perspective of Natural Mineral Compositions",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": true,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 26,
+   "openalex_id": "W4362607636",
+   "doi": "10.1080/01614940.2023.2197716",
+   "year": 2023,
+   "title": "Meerwein-Ponndorf-Verley reduction in current heterogeneous catalysis research: a review",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 27,
+   "openalex_id": "W4392834015",
+   "doi": null,
+   "year": 2023,
+   "title": "New insights in zeolite formation \u2013 New advances in zeolite properties control",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 28,
+   "openalex_id": "W4392834009",
+   "doi": null,
+   "year": 2023,
+   "title": "Recent Advances in Zeolite Properties Control",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 29,
+   "openalex_id": "W4366249648",
+   "doi": "10.1146/annurev-matsci-080921-085947",
+   "year": 2023,
+   "title": "Representations of Materials for Machine Learning",
+   "experts": [
+    "gomez_bombarelli"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 30,
+   "openalex_id": "W4323811834",
+   "doi": "10.1002/advs.202207756",
+   "year": 2023,
+   "title": "Site Diversity and Mechanism of Metal\u2010Exchanged Zeolite Catalyzed Non\u2010Oxidative Propane Dehydrogenation",
+   "experts": [
+    "lobo"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 31,
+   "openalex_id": "W4311302218",
+   "doi": "10.1016/j.micromeso.2022.112399",
+   "year": 2022,
+   "title": "Opportunities to explore large OSDA in zeolite synthesis: New routes created from the ITQ lab",
+   "experts": [
+    "zones"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 32,
+   "openalex_id": "W4293457474",
+   "doi": "10.1021/acssuschemeng.2c02810",
+   "year": 2022,
+   "title": "Prospects of Producing Higher Alcohols from Carbon Dioxide: A Process System Engineering Perspective",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 33,
+   "openalex_id": "W4312094660",
+   "doi": "10.1021/acs.chemrev.2c00509",
+   "year": 2022,
+   "title": "Recent Advances in Tetra- (Ti, Sn, Zr, Hf) and Pentavalent (Nb, V, Ta) Metal-Substituted Molecular Sieve Catalysis",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 34,
+   "openalex_id": "W4213378494",
+   "doi": "10.1016/j.trechm.2022.01.008",
+   "year": 2022,
+   "title": "Single-atom heterogeneous catalysts for sustainable organic synthesis",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 35,
+   "openalex_id": "W4321994978",
+   "doi": null,
+   "year": 2022,
+   "title": "The challenges in the synthesis of nanozeolites with emphasis on defect sites. Feature Keynote talk",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 36,
+   "openalex_id": "W4392834020",
+   "doi": null,
+   "year": 2022,
+   "title": "The future of zeolites in net carbon zero-transitioning economies",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 37,
+   "openalex_id": "W4283829700",
+   "doi": "10.1039/d2fd90021a",
+   "year": 2022,
+   "title": "Understanding crystal nucleation mechanisms: where do we stand? General discussion",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 38,
+   "openalex_id": "W4223930335",
+   "doi": "10.1146/annurev-chembioeng-092320-120148",
+   "year": 2022,
+   "title": "Zeolitic Imidazolate Framework Membranes: Novel Synthesis Methods and Progress Toward Industrial Use",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 39,
+   "openalex_id": "W3173076770",
+   "doi": "10.1039/d0cs01459a",
+   "year": 2021,
+   "title": "Activation and conversion of alkanes in the confined space of zeolite-type materials",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 40,
+   "openalex_id": "W3199528549",
+   "doi": "10.1038/s41578-021-00360-6",
+   "year": 2021,
+   "title": "Atomically precise control in the design of low-nuclearity supported metal catalysts",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 41,
+   "openalex_id": "W3148353375",
+   "doi": "10.1146/annurev-chembioeng-092120-010920",
+   "year": 2021,
+   "title": "Dynamic Interconversion of Metal Active Site Ensembles in Zeolite Catalysis",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 42,
+   "openalex_id": "W3130283969",
+   "doi": "10.1039/d1sc00151e",
+   "year": 2021,
+   "title": "Kinetic effects of molecular clustering and solvation by extended networks in zeolite acid catalysis",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 43,
+   "openalex_id": "W4320350819",
+   "doi": null,
+   "year": 2021,
+   "title": "Mastering Zeolite Synthesis: Trends, Challenges and Opportunities. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 44,
+   "openalex_id": "W4323346651",
+   "doi": null,
+   "year": 2021,
+   "title": "Opportunities in defects engineering and healing in zeolites. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 45,
+   "openalex_id": "W4200433869",
+   "doi": "10.1002/aesr.202100169",
+   "year": 2021,
+   "title": "Recent Progress in Materials Exploration for Thermocatalytic, Photocatalytic, and Integrated Photothermocatalytic CO2\u2010to\u2010Fuel Conversion",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 46,
+   "openalex_id": "W3194372557",
+   "doi": "10.1039/d1cs00395j",
+   "year": 2021,
+   "title": "Silanol defect engineering and healing in zeolites: opportunities to fine-tune their properties and performances",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 47,
+   "openalex_id": "W3130411608",
+   "doi": "10.1039/d0cs01506g",
+   "year": 2021,
+   "title": "Status and prospects of the decentralised valorisation of natural gas into energy and energy carriers",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 48,
+   "openalex_id": "W3129651225",
+   "doi": "10.1038/s41570-021-00255-8",
+   "year": 2021,
+   "title": "Structural transformations of solid electrocatalysts and photocatalysts",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 49,
+   "openalex_id": "W3045087963",
+   "doi": "10.1002/adma.202002927",
+   "year": 2020,
+   "title": "Applications of Zeolites to C1 Chemistry: Recent Advances, Challenges, and Opportunities",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 50,
+   "openalex_id": "W3032799898",
+   "doi": "10.1039/d0cs00130a",
+   "year": 2020,
+   "title": "Biomass valorisation over metal-based solid catalysts from nanoparticles to single atoms",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 51,
+   "openalex_id": "W3094212385",
+   "doi": "10.1038/s41578-020-00250-3",
+   "year": 2020,
+   "title": "Confining isolated atoms and clusters in crystalline porous materials for catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 52,
+   "openalex_id": "W3025294995",
+   "doi": "10.1039/c9cs00713j",
+   "year": 2020,
+   "title": "Core\u2013shell structured catalysts for thermocatalytic, photocatalytic, and electrocatalytic conversion of CO 2",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 53,
+   "openalex_id": "W3112824495",
+   "doi": "10.1002/adma.202003075",
+   "year": 2020,
+   "title": "Design of Local Atomic Environments in Single\u2010Atom Electrocatalysts for Renewable Energy Conversions",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 54,
+   "openalex_id": "W3044773115",
+   "doi": "10.1002/anie.202005498",
+   "year": 2020,
+   "title": "Emphasis on the Properties of Metal\u2010Containing Zeolites Operating Outside the Comfort Zone of Current Heterogeneous Catalytic Reactions",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 55,
+   "openalex_id": "W3010325843",
+   "doi": "10.1016/j.trechm.2020.02.003",
+   "year": 2020,
+   "title": "Evolution of Isolated Atoms and Clusters in Catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 56,
+   "openalex_id": "W3044779794",
+   "doi": "10.1021/acscatal.0c02102",
+   "year": 2020,
+   "title": "Opportunities in Catalysis over Metal-Zeotypes Enabled by Descriptions of Active Centers Beyond Their Binding Site",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 57,
+   "openalex_id": "W3093925967",
+   "doi": "10.1021/acs.chemrev.0c00576",
+   "year": 2020,
+   "title": "Single-Atom Catalysts across the Periodic Table",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 58,
+   "openalex_id": "W3048569765",
+   "doi": "10.1021/acs.accounts.0c00328",
+   "year": 2020,
+   "title": "Solvation and Mobilization of Copper Active Sites in Zeolites by Ammonia: Consequences for the Catalytic Reduction of Nitrogen Oxides",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 59,
+   "openalex_id": "W3033258252",
+   "doi": "10.1002/anie.202005776",
+   "year": 2020,
+   "title": "Synthesis and Post\u2010Synthesis Transformation of Germanosilicate Zeolites",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 60,
+   "openalex_id": "W3083450894",
+   "doi": "10.1038/s41596-020-0366-9",
+   "year": 2020,
+   "title": "Tutorial: structural characterization of isolated metal atoms and subnanometric metal clusters in zeolites",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 61,
+   "openalex_id": "W3048859236",
+   "doi": "10.1002/adma.202003264",
+   "year": 2020,
+   "title": "Zeolite (In)Stability under Aqueous or Steaming Conditions",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 62,
+   "openalex_id": "W2981507075",
+   "doi": "10.1016/j.cattod.2019.10.021",
+   "year": 2019,
+   "title": "Advances and challenges in zeolite synthesis and catalysis",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 63,
+   "openalex_id": "W2975661862",
+   "doi": "10.1021/acs.accounts.9b00399",
+   "year": 2019,
+   "title": "Machine Learning Applied to Zeolite Synthesis: The Missing Link for Realizing High-Throughput Discovery",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 64,
+   "openalex_id": "W2921135511",
+   "doi": null,
+   "year": 2019,
+   "title": "Nanosized zeolites: targets and challenges",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 65,
+   "openalex_id": "W4320033344",
+   "doi": null,
+   "year": 2019,
+   "title": "Nanosized zeolites: targets and challenges. Keynote",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 66,
+   "openalex_id": "W2908585777",
+   "doi": "10.1002/cssc.201802637",
+   "year": 2019,
+   "title": "Needs and Gaps for Catalysis in Addressing Transitions in Chemistry and Energy from a Sustainability Perspective",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 67,
+   "openalex_id": "W2954407043",
+   "doi": "10.1002/anie.201906916",
+   "year": 2019,
+   "title": "Preserved in a Shell: High\u2010Performance Graphene\u2010Confined Ruthenium Nanoparticles in Acetylene Hydrochlorination",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 68,
+   "openalex_id": "W2965881608",
+   "doi": "10.1002/anie.201905049",
+   "year": 2019,
+   "title": "SSZ\u201027: A Small\u2010Pore Zeolite with Large Heart\u2010Shaped Cavities Determined by Using Multi\u2010crystal Electron Diffraction",
+   "experts": [
+    "zones"
+   ],
+   "is_oa": true,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 69,
+   "openalex_id": "W2910419837",
+   "doi": "10.1021/acscatal.8b04317",
+   "year": 2019,
+   "title": "What Is Measured When Measuring Acidity in Zeolites with Probe Molecules?",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 70,
+   "openalex_id": "W4288090112",
+   "doi": null,
+   "year": 2019,
+   "title": "Zeolite Materials: Current Challenges and Opportunities",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 71,
+   "openalex_id": "W2888162628",
+   "doi": "10.1002/adma.201801712",
+   "year": 2018,
+   "title": "2D Oxide Nanomaterials to Address the Energy Transition and Catalysis",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 72,
+   "openalex_id": "W2783137249",
+   "doi": "10.1021/acs.chemrev.7b00340",
+   "year": 2018,
+   "title": "Advances in One-Pot Synthesis through Borrowing Hydrogen Catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 73,
+   "openalex_id": "W2894543039",
+   "doi": "10.1002/anie.201711422",
+   "year": 2018,
+   "title": "Building Zeolites from Precrystallized Units: Nanoscale Architecture",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 74,
+   "openalex_id": "W2903833185",
+   "doi": "10.1097/mnh.0000000000000474",
+   "year": 2018,
+   "title": "Citrate therapy for calcium phosphate stones",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 75,
+   "openalex_id": "W2789481882",
+   "doi": "10.1146/annurev-chembioeng-060817-083953",
+   "year": 2018,
+   "title": "Crystal Engineering for Catalysis",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 76,
+   "openalex_id": "W2888838181",
+   "doi": "10.1039/c8cs00370j",
+   "year": 2018,
+   "title": "From 3D to 2D zeolite catalytic materials",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 77,
+   "openalex_id": "W4289753118",
+   "doi": null,
+   "year": 2018,
+   "title": "Future of nanosized zeolites",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 78,
+   "openalex_id": "W4320033312",
+   "doi": null,
+   "year": 2018,
+   "title": "Future of nanosized zeolites. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 79,
+   "openalex_id": "W2802791016",
+   "doi": "10.1021/acs.chemrev.7b00776",
+   "year": 2018,
+   "title": "Metal Catalysts for Heterogeneous Catalysis: From Single Atoms to Nanoclusters and Nanoparticles",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 80,
+   "openalex_id": "W4293218223",
+   "doi": null,
+   "year": 2018,
+   "title": "Progress in nanosized zeolites",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 81,
+   "openalex_id": "W4320033296",
+   "doi": null,
+   "year": 2018,
+   "title": "Progress in nanosized zeolites. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 82,
+   "openalex_id": "W2802665194",
+   "doi": "10.1021/acs.chemrev.7b00738",
+   "year": 2018,
+   "title": "Small-Pore Zeolites: Synthesis and Catalysis",
+   "experts": [
+    "davis"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 83,
+   "openalex_id": "W2898000458",
+   "doi": "10.1002/anie.201806936",
+   "year": 2018,
+   "title": "The Multifaceted Reactivity of Single\u2010Atom Heterogeneous Catalysts",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 84,
+   "openalex_id": "W2498965630",
+   "doi": "10.1146/annurev-chembioeng-060816-101303",
+   "year": 2017,
+   "title": "A Review of Biorefinery Separations for Bioproduct Production via Thermocatalytic Processing",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 85,
+   "openalex_id": "W4320033234",
+   "doi": null,
+   "year": 2017,
+   "title": "Advances in nanosized zeolites. Invited Talk",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 86,
+   "openalex_id": "W2584215052",
+   "doi": "10.1021/acs.chemrev.6b00551",
+   "year": 2017,
+   "title": "Halogen-Mediated Conversion of Hydrocarbons to Commodities",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 87,
+   "openalex_id": "W2726413144",
+   "doi": "10.1021/acs.chemrev.7b00095",
+   "year": 2017,
+   "title": "Hydrogen Sulfide Capture: From Absorption in Polar Liquids to Oxide, Zeolite, and Metal\u2013Organic Framework Adsorbents and Membranes",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 88,
+   "openalex_id": "W2571076837",
+   "doi": "10.1080/01496395.2017.1279180",
+   "year": 2017,
+   "title": "Membranes for Kraft black liquor concentration and chemical recovery: Current progress, challenges, and opportunities",
+   "experts": [
+    "nair"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 89,
+   "openalex_id": "W2605585939",
+   "doi": "10.1097/mnh.0000000000000330",
+   "year": 2017,
+   "title": "Molecular modifiers of kidney stones",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 90,
+   "openalex_id": "W2749225355",
+   "doi": null,
+   "year": 2017,
+   "title": "Zeolite molecular sieves: Present trends and prospects",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 91,
+   "openalex_id": "W3086547641",
+   "doi": null,
+   "year": 2016,
+   "title": "Advances in Synthesis and Applications of Nanosized Zeolites",
+   "experts": [
+    "valtchev",
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 92,
+   "openalex_id": "W2395270687",
+   "doi": "10.1016/j.jcat.2016.04.015",
+   "year": 2016,
+   "title": "Challenges and strategies in the encapsulation and stabilization of monodisperse Au clusters within zeolites",
+   "experts": [
+    "zones"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 93,
+   "openalex_id": "W4293218312",
+   "doi": null,
+   "year": 2016,
+   "title": "Nanosized zeolites: Progress in synthesis and application",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 94,
+   "openalex_id": "W2274689151",
+   "doi": "10.1016/j.crci.2015.11.005",
+   "year": 2016,
+   "title": "Nanosized zeolites: Quo Vadis?",
+   "experts": [
+    "valtchev",
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 95,
+   "openalex_id": "W2565036453",
+   "doi": "10.1039/c6cs00324a",
+   "year": 2016,
+   "title": "Status and prospects in higher alcohols synthesis from syngas",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 96,
+   "openalex_id": "W4293218297",
+   "doi": null,
+   "year": 2016,
+   "title": "Targets and challenges in nanozeolites",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 97,
+   "openalex_id": "W4323346577",
+   "doi": null,
+   "year": 2016,
+   "title": "Targets and challenges in nanozeolites. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 98,
+   "openalex_id": "W4297971682",
+   "doi": null,
+   "year": 2016,
+   "title": "\u201cHierarchical and Nanozeolites: Prospects\u201d",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 99,
+   "openalex_id": "W2212396805",
+   "doi": "10.1002/cctc.201501269",
+   "year": 2015,
+   "title": "Advances in the Design of Nanostructured Catalysts for Selective Hydrogenation",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 100,
+   "openalex_id": "W1801166380",
+   "doi": "10.1126/science.aaa6760",
+   "year": 2015,
+   "title": "Crystallization by particle attachment in synthetic, biogenic, and geologic environments",
+   "experts": [
+    "rimer"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 101,
+   "openalex_id": "W2059222031",
+   "doi": "10.1039/c5cs00028a",
+   "year": 2015,
+   "title": "Design of Lewis-acid centres in zeolitic matrices for the conversion of renewables",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 102,
+   "openalex_id": "W1947786635",
+   "doi": "10.1039/c5cs00040h",
+   "year": 2015,
+   "title": "Gas sensing using porous materials for automotive applications",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 103,
+   "openalex_id": "W2503557947",
+   "doi": "10.1039/9781849737494",
+   "year": 2015,
+   "title": "Heterogeneous Catalysis for Today's Challenges",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 104,
+   "openalex_id": "W1863153693",
+   "doi": "10.1039/c5cs00508f",
+   "year": 2015,
+   "title": "Layer like porous materials with hierarchical structure",
+   "experts": [
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 105,
+   "openalex_id": "W2039596657",
+   "doi": "10.1016/j.coche.2015.01.002",
+   "year": 2015,
+   "title": "Mesoporous zeolites by fluoride etching",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 106,
+   "openalex_id": "W4293218319",
+   "doi": null,
+   "year": 2015,
+   "title": "Nanosized Zeolites: Tendencies and Challenges",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 107,
+   "openalex_id": "W1958563130",
+   "doi": "10.1039/c5cs00210a",
+   "year": 2015,
+   "title": "Nanosized microporous crystals: emerging applications",
+   "experts": [
+    "valtchev",
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 108,
+   "openalex_id": "W4293229209",
+   "doi": null,
+   "year": 2015,
+   "title": "Nanozeolites: Quo vadis?",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 109,
+   "openalex_id": "W2923423196",
+   "doi": null,
+   "year": 2015,
+   "title": "Overview of synthesis strategies and advanced applications of nanosized zeolites",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 110,
+   "openalex_id": "W2152940535",
+   "doi": "10.1002/chem.201406437",
+   "year": 2015,
+   "title": "Photobiocatalysis: The Power of Combining Photocatalysis and Enzymes",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 111,
+   "openalex_id": "W1792600229",
+   "doi": "10.1038/ncomms9633",
+   "year": 2015,
+   "title": "Structural analysis of hierarchically organized zeolites",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 112,
+   "openalex_id": "W2016157003",
+   "doi": "10.1039/c5cs00023h",
+   "year": 2015,
+   "title": "Synthesis of new zeolite structures",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 113,
+   "openalex_id": "W2098058023",
+   "doi": "10.1039/c5cs00520e",
+   "year": 2015,
+   "title": "Synthesis, characterisation, and catalytic evaluation of hierarchical faujasite zeolites: milestones, challenges, and future directions",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 114,
+   "openalex_id": "W2114367666",
+   "doi": "10.1039/c5cs00045a",
+   "year": 2015,
+   "title": "The ADOR mechanism for the synthesis of new zeolites",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 115,
+   "openalex_id": "W2208938795",
+   "doi": "10.1039/c5cy02079d",
+   "year": 2015,
+   "title": "Two-dimensional zeolites in catalysis: current status and perspectives",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 116,
+   "openalex_id": "W1950726183",
+   "doi": "10.1039/c5cs00292c",
+   "year": 2015,
+   "title": "Zeolite membranes \u2013 a review and comparison with MOFs",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 117,
+   "openalex_id": "W2006135828",
+   "doi": "10.1021/jp504358d",
+   "year": 2014,
+   "title": "Challenges of and Insights into Acid-Catalyzed Transformations of Sugars",
+   "experts": [
+    "tsapatsis",
+    "davis",
+    "gounder",
+    "lobo"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 118,
+   "openalex_id": "W2082952862",
+   "doi": "10.1080/01614940.2014.946846",
+   "year": 2014,
+   "title": "Recent Advances in Reactions of Alkylbenzenes Over Novel Zeolites: The Effects of Zeolite Structure and Morphology",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 119,
+   "openalex_id": "W2019926744",
+   "doi": "10.1021/cr400600f",
+   "year": 2014,
+   "title": "Two-Dimensional Zeolites: Current Status and Perspectives",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 120,
+   "openalex_id": "W2111275584",
+   "doi": "10.1093/jmicro/dfs098",
+   "year": 2013,
+   "title": "A review of fine structures of nanoporous materials as evidenced by microscopic methods",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 121,
+   "openalex_id": "W2080989556",
+   "doi": "10.1016/j.coche.2013.04.005",
+   "year": 2013,
+   "title": "Advanced visualization strategies bridge the multidimensional complexity of technical catalysts",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 122,
+   "openalex_id": "W2121872439",
+   "doi": "10.1039/c3nr01629c",
+   "year": 2013,
+   "title": "Advances in nanosized zeolites",
+   "experts": [
+    "valtchev",
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 123,
+   "openalex_id": "W2950992008",
+   "doi": "10.1016/j.micromeso.2013.08.003",
+   "year": 2013,
+   "title": "Advances in the synthesis of titanosilicates: From the medium pore TS-1 zeolite to highly-accessible ordered materials",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 124,
+   "openalex_id": "W4322020523",
+   "doi": null,
+   "year": 2013,
+   "title": "Advances in zeolite synthesis inspires novel applications. Plenary",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 125,
+   "openalex_id": "W2022755037",
+   "doi": "10.1080/01614940.2012.685811",
+   "year": 2013,
+   "title": "Application of Molecular Sieves in Transformations of Biomass and Biomass-Derived Feedstocks",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 126,
+   "openalex_id": "W2103327329",
+   "doi": "10.1039/c2cs35385g",
+   "year": 2013,
+   "title": "Catalysis using multifunctional organosiliceous hybrid materials",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 127,
+   "openalex_id": "W2087414462",
+   "doi": "10.1039/c3cs60076a",
+   "year": 2013,
+   "title": "From powder to technical body: the undervalued science of catalyst scale up",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 128,
+   "openalex_id": "W2950170327",
+   "doi": "10.2533/chimia.2013.327",
+   "year": 2013,
+   "title": "Hierarchical Zeolites Overcome all Obstacles: Next Stop Industrial Implementation",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 129,
+   "openalex_id": "W2024637444",
+   "doi": "10.1016/j.ces.2013.09.047",
+   "year": 2013,
+   "title": "Membranes from nanoporous 1D and 2D materials: A review of opportunities, developments, and challenges",
+   "experts": [
+    "nair"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 130,
+   "openalex_id": "W1974404404",
+   "doi": "10.1021/cs400959k",
+   "year": 2013,
+   "title": "Metal Organic Framework Catalysis: Quo vadis ?",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 131,
+   "openalex_id": "W1969601037",
+   "doi": "10.1016/j.jcat.2013.07.028",
+   "year": 2013,
+   "title": "Opportunities for selective catalysis within discrete portions of zeolites: The case for SSZ-57LP",
+   "experts": [
+    "zones"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 132,
+   "openalex_id": "W2939968436",
+   "doi": null,
+   "year": 2013,
+   "title": "Opportunities in catalysis by Micropore-Mesopore Hierachical Zeolites",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 133,
+   "openalex_id": "W2082335257",
+   "doi": "10.1021/cr300439k",
+   "year": 2013,
+   "title": "Porous Nanosized Particles: Preparation, Properties, and Applications",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 134,
+   "openalex_id": "W2010738202",
+   "doi": "10.1016/j.micromeso.2013.08.014",
+   "year": 2013,
+   "title": "Progress in zeolite synthesis promotes advanced applications",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 135,
+   "openalex_id": "W2951974087",
+   "doi": "10.1016/j.micromeso.2013.10.024",
+   "year": 2013,
+   "title": "Recent advances in zeolite science based on advance characterization techniques",
+   "experts": [
+    "lobo"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 136,
+   "openalex_id": "W2039786475",
+   "doi": "10.1039/c3ee41272e",
+   "year": 2013,
+   "title": "Status and perspectives of CO2 conversion into fuels and chemicals by catalytic, photocatalytic and electrocatalytic processes",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 137,
+   "openalex_id": "W1993674843",
+   "doi": "10.1039/c3cs60016e",
+   "year": 2013,
+   "title": "The discovery of mesoporous molecular sieves from the twenty year perspective",
+   "experts": [
+    "roth"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 138,
+   "openalex_id": "W1974502075",
+   "doi": "10.1021/cm401914u",
+   "year": 2013,
+   "title": "Zeolites from a Materials Chemistry Perspective",
+   "experts": [
+    "davis"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 139,
+   "openalex_id": "W2028746823",
+   "doi": "10.1016/j.coche.2013.06.001",
+   "year": 2013,
+   "title": "Zeolites with nanometer diffusion lengths and implications in shape selective catalysis",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 140,
+   "openalex_id": "W2326266449",
+   "doi": "10.1021/cs300124m",
+   "year": 2012,
+   "title": "Biobased Chemicals from Conception toward Industrial Reality: Lessons Learned and To Be Learned",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 141,
+   "openalex_id": "W1997969673",
+   "doi": "10.3390/ma5040699",
+   "year": 2012,
+   "title": "Exploring Mass Transfer in Mesoporous Zeolites by NMR Diffusometry",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 142,
+   "openalex_id": "W2788567344",
+   "doi": null,
+   "year": 2012,
+   "title": "New opportunities in ZMPC field with hierarchical zeolite structure-directing surfactants",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 143,
+   "openalex_id": "W1998864824",
+   "doi": "10.1016/j.micromeso.2012.03.054",
+   "year": 2012,
+   "title": "Recent advances in the synthesis of hierarchically nanoporous zeolites",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 144,
+   "openalex_id": "W2155628851",
+   "doi": "10.1039/c2cs35196j",
+   "year": 2012,
+   "title": "Tailored crystalline microporous materials by post-synthesis modification",
+   "experts": [
+    "valtchev",
+    "perez_ramirez",
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 145,
+   "openalex_id": "W2486916731",
+   "doi": "10.1201/b10610-20",
+   "year": 2011,
+   "title": "13Zeolites and Mesoporous Aluminosilicates as Solid Acid Catalysts: Fundamentals and Future Challenges",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 146,
+   "openalex_id": "W2207650586",
+   "doi": null,
+   "year": 2011,
+   "title": "Consequences of Confinement in Zeolite Acid Catalysis",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": true,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 147,
+   "openalex_id": "W2330424590",
+   "doi": "10.1021/cr100414u",
+   "year": 2011,
+   "title": "Gold-Catalyzed Carbon\u2212Heteroatom Bond-Forming Reactions",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 148,
+   "openalex_id": "W2322592977",
+   "doi": "10.1107/s0108767311096929",
+   "year": 2011,
+   "title": "Prospects and challenges in the synthesis of zeotype materials",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 149,
+   "openalex_id": "W2325060946",
+   "doi": "10.1021/ar200138n",
+   "year": 2011,
+   "title": "The Roles of Entropy and Enthalpy in Stabilizing Ion-Pairs at Transition States in Zeolite Acid Catalysis",
+   "experts": [
+    "gounder"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 150,
+   "openalex_id": "W2950497048",
+   "doi": "10.1016/j.cattod.2011.10.006",
+   "year": 2011,
+   "title": "Zeolite-based materials for novel catalytic applications: Opportunities, perspectives and open problems",
+   "experts": [
+    "cejka",
+    "roth"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 151,
+   "openalex_id": "W1967109824",
+   "doi": "10.1021/cr9003924",
+   "year": 2010,
+   "title": "Engineering Metal Organic Frameworks for Heterogeneous Catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 152,
+   "openalex_id": "W2036832988",
+   "doi": "10.1021/cr1002084",
+   "year": 2010,
+   "title": "Heterogeneous Catalysts for the One-Pot Synthesis of Chemicals and Fine Chemicals",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 153,
+   "openalex_id": "W2041348294",
+   "doi": "10.1039/c0cs00016g",
+   "year": 2010,
+   "title": "Identifying reaction intermediates and catalytic active sites through in situ characterization techniques",
+   "experts": [
+    "lobo"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 154,
+   "openalex_id": "W2104006261",
+   "doi": "10.1002/cssc.200900007",
+   "year": 2009,
+   "title": "Acylation Reactions over Zeolites and Mesoporous Catalysts",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 155,
+   "openalex_id": "W2107021490",
+   "doi": "10.1002/cssc.200800259",
+   "year": 2009,
+   "title": "Mono\u2010 and Multisite Solid Catalysts in Cascade Reactions for Chemical Process Intensification",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 156,
+   "openalex_id": "W2090782111",
+   "doi": "10.1007/s11244-009-9419-6",
+   "year": 2009,
+   "title": "Recent Advances in Catalysis Over Mesoporous Molecular Sieves",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 157,
+   "openalex_id": "W1964280047",
+   "doi": "10.1039/b809030k",
+   "year": 2008,
+   "title": "Hierarchical zeolites: enhanced utilisation of microporous crystals in catalysis by advances in materials design",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 158,
+   "openalex_id": "W1988291528",
+   "doi": "10.1039/b707314n",
+   "year": 2008,
+   "title": "Supported gold nanoparticles as catalysts for organic reactions",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 159,
+   "openalex_id": "W2022729726",
+   "doi": "10.1080/01614940701804042",
+   "year": 2008,
+   "title": "Synthesis, Characterization and Catalytic Applications of Organized Mesoporous Aluminas",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 160,
+   "openalex_id": "W4321853626",
+   "doi": null,
+   "year": 2008,
+   "title": "Zeolites and Related Materials: Trends, Targets and Challenges. Special invitation",
+   "experts": [
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 161,
+   "openalex_id": "W3113827824",
+   "doi": null,
+   "year": 2007,
+   "title": "Advances in NanoZeolite Science: Crystallization Mechanism, Processing and Applications",
+   "experts": [
+    "valtchev"
+   ],
+   "is_oa": false,
+   "label": "D_talk_or_duplicate"
+  },
+  {
+   "idx": 162,
+   "openalex_id": "W2011187752",
+   "doi": "10.1039/b712168g",
+   "year": 2007,
+   "title": "Enhancement of the photocatalytic activity of TiO 2 through spatial structuring and particle size control: from subnanometric to submillimetric length scale",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 163,
+   "openalex_id": "W2022519860",
+   "doi": "10.1080/01614940701583240",
+   "year": 2007,
+   "title": "Perspectives of Micro/Mesoporous Composites in Catalysis",
+   "experts": [
+    "cejka",
+    "mintova"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 164,
+   "openalex_id": "W2105552426",
+   "doi": "10.1002/anie.200604504",
+   "year": 2007,
+   "title": "Synergies between Bio\u2010 and Oil Refineries for the Production of Fuels from Biomass",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 165,
+   "openalex_id": "W2046004711",
+   "doi": "10.1016/j.jcat.2006.07.001",
+   "year": 2006,
+   "title": "Iron site modification upon alkaline treatment of Fe-ZSM-5 zeolites\u2014Opportunities for improved N2O decomposition activity",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 166,
+   "openalex_id": "W2120446525",
+   "doi": "10.1021/cr068360d",
+   "year": 2006,
+   "title": "Synthesis of Transportation Fuels from Biomass: Chemistry, Catalysts, and Engineering",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 167,
+   "openalex_id": "W1794020010",
+   "doi": "10.7907/rzp1-g920",
+   "year": 2005,
+   "title": "Composite inorganic membranes for gas separations : chemical vapor deposition of hydrogen permselective oxide membranes and preparation of supported zeolite NaA films",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 168,
+   "openalex_id": "W2048712615",
+   "doi": "10.1016/j.cocis.2005.09.013",
+   "year": 2005,
+   "title": "Progress in manipulating zeolite morphology and related applications",
+   "experts": [
+    "tsapatsis"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 169,
+   "openalex_id": "W2037995740",
+   "doi": "10.1016/j.cocis.2005.08.005",
+   "year": 2005,
+   "title": "The chemistry of phase selectivity in the synthesis of high-silica zeolites",
+   "experts": [
+    "zones"
+   ],
+   "is_oa": false,
+   "label": "A_core"
+  },
+  {
+   "idx": 170,
+   "openalex_id": "W133125708",
+   "doi": "10.7907/01dx-qc48",
+   "year": 2005,
+   "title": "The synthesis and characterization of novel high-silica zeolites",
+   "experts": [
+    "lobo"
+   ],
+   "is_oa": true,
+   "label": "A_core"
+  },
+  {
+   "idx": 171,
+   "openalex_id": "W596787775",
+   "doi": null,
+   "year": 2005,
+   "title": "Zeolites and ordered mesoporous materials : progress and prospects : the 1st FEZA School on Zeolites, Prague, Czech Republic, August 20-21, 2005",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 172,
+   "openalex_id": "W1966138514",
+   "doi": "10.1081/cr-200036732",
+   "year": 2004,
+   "title": "Attempts to Fill the Gap Between Enzymatic, Homogeneous, and Heterogeneous Catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 173,
+   "openalex_id": "W2009857519",
+   "doi": "10.1021/cr030680z",
+   "year": 2003,
+   "title": "Lewis Acids: From Conventional Homogeneous to Green Homogeneous and Heterogeneous Catalysis",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 174,
+   "openalex_id": "W2326087237",
+   "doi": "10.1142/9789812704320_0004",
+   "year": 2003,
+   "title": "ORDERED MESOPOROUS CARBONS WITH NEW OPPORTUNITIES FOR ADSORPTION STUDIES",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 175,
+   "openalex_id": "W2128405848",
+   "doi": "10.1016/s0021-9517(02)00132-x",
+   "year": 2003,
+   "title": "State of the art and future challenges of zeolites as catalysts",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 176,
+   "openalex_id": "W1551294672",
+   "doi": "10.1109/imnc.2002.1178557",
+   "year": 2003,
+   "title": "Synthesis of ordered nanoporous carbons using mesoporous template and their perspectives",
+   "experts": [
+    "ryoo"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 177,
+   "openalex_id": "W2170749193",
+   "doi": "10.1081/cr-120005741",
+   "year": 2002,
+   "title": "ACID-CATALYZED SYNTHESIS OF MONO- AND DIALKYL BENZENES OVER ZEOLITES: ACTIVE SITES, ZEOLITE TOPOLOGY, AND REACTION MECHANISMS",
+   "experts": [
+    "cejka"
+   ],
+   "is_oa": false,
+   "label": "B_adjacent"
+  },
+  {
+   "idx": 178,
+   "openalex_id": "W1524284314",
+   "doi": null,
+   "year": 2002,
+   "title": "Catalyzed N2O Activation, Promising (new) Catalyst for Abatement and Utilization",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": true,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 179,
+   "openalex_id": "W2058650676",
+   "doi": "10.1021/cr010333u",
+   "year": 2002,
+   "title": "Lewis Acids as Catalysts in Oxidation Reactions: From Homogeneous to Heterogeneous Systems",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 180,
+   "openalex_id": "W2152185585",
+   "doi": "10.1016/s1381-1169(01)00266-7",
+   "year": 2002,
+   "title": "On the acylation reactions of anisole using \u03b1,\u03b2-unsaturated organic acids as acylating agents and solid acids as catalysts: a mechanistic overview",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": false,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 181,
+   "openalex_id": "W1012559448",
+   "doi": null,
+   "year": 2002,
+   "title": "Structure and properties of microporous molecular sieve materials and membranes",
+   "experts": [
+    "nair"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  },
+  {
+   "idx": 182,
+   "openalex_id": "W2616706154",
+   "doi": "10.1002/1521-3773(20010518)40:10<1976::aid-anie11111976>3.0.co;2-m",
+   "year": 2001,
+   "title": "Book Review: Catalysis and Zeolites. Fundamentals and Applications. Edited by Jens Weitkamp and Lothar Puppe.",
+   "experts": [
+    "corma"
+   ],
+   "is_oa": true,
+   "label": "D_not_a_review"
+  },
+  {
+   "idx": 183,
+   "openalex_id": "W2189614397",
+   "doi": "10.1016/s0920-5861(00)00321-7",
+   "year": 2000,
+   "title": "The six-flow reactor technology A review on fast catalyst screening and kinetic studies",
+   "experts": [
+    "perez_ramirez"
+   ],
+   "is_oa": false,
+   "label": "C_off_theme"
+  }
+ ]
+}
