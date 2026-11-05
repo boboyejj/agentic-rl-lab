@@ -132,9 +132,19 @@ def infer_context(text: str) -> str:
     return "synthesis"
 
 
+RESULT_START = re.compile(r"^(here(in)?|we |in this (work|study|paper|contribution)|this (work|study|paper)|our |the results?|"
+                          r"it (is|was) (found|shown)|these results)", re.I)
+
+
 def first_sentences(text: str, n: int) -> str:
-    sentences = re.split(r"(?<=[.!?])\s+", (text or "").strip())
-    return " ".join(sentences[:n]).strip()
+    """Motivation sentences only: stop before the first sentence that reports what the authors did or found."""
+    text = re.sub(r"^\s*abstract\s*", "", (text or "").strip(), flags=re.I)
+    kept = []
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        if RESULT_START.match(sentence) or len(kept) == n:
+            break
+        kept.append(sentence)
+    return " ".join(kept).strip() or "(not available)"
 
 
 def build_item(record: dict[str, Any], flaws: list[Flaw], item_id: str) -> dict[str, Any]:
@@ -161,7 +171,8 @@ def make_items(records: list[dict[str, Any]], n: int, max_flaws: int, clean_frac
                ) -> list[dict[str, Any]]:
     rng = random.Random(seed)
     usable = [r for r in records if r.get("role", "primary") == "primary" and r.get("title")
-              and len(r.get("abstract") or "") > 300 and r.get("on_topic", True)]
+              and len(r.get("abstract") or "") > 300 and r.get("on_topic", True)
+              and first_sentences(r.get("abstract", ""), 2) != "(not available)"]
     rng.shuffle(usable)
     items = []
     for i, rec in enumerate(usable[:n]):

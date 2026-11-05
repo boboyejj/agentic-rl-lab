@@ -73,16 +73,19 @@ def search_critiques(fetch: Fetcher, terms: list[str], from_year: int, max_per_q
     found: dict[str, dict[str, Any]] = {}
     for term in terms:
         for prefix in ("comment on", "reply to", "response to", "matters arising"):
-            cursor, n = "*", 0
-            while cursor and n < max_per_query:
+            page, n = 1, 0
+            while n < max_per_query and page * 100 <= 10_000:
                 res = fetch("/works", {
                     "filter": f"title.search:{prefix},from_publication_date:{from_year}-01-01",
-                    "search": term, "per-page": 100, "cursor": cursor, "select": FIELDS})
-                for w in res.get("results", []):
+                    "search": term, "per-page": 100, "page": page, "select": FIELDS})
+                results = res.get("results", [])
+                for w in results:
                     n += 1
                     if critique_kind(w.get("display_name", "")):
                         found[short_id(w["id"])] = w
-                cursor = (res.get("meta") or {}).get("next_cursor")
+                if len(results) < 100:
+                    break
+                page += 1
     return found
 
 

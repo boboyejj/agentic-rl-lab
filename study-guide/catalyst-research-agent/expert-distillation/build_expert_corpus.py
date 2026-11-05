@@ -158,7 +158,7 @@ Fetcher = Callable[[str, dict[str, Any] | None], dict[str, Any]]
 
 
 def http_json(url: str, body: dict[str, Any] | None = None, *, headers: dict[str, str] | None = None,
-              retries: int = 5) -> dict[str, Any]:
+              retries: int = 7) -> dict[str, Any]:
     data = json.dumps(body).encode() if body is not None else None
     hdrs = {"User-Agent": USER_AGENT, "Accept": "application/json", **(headers or {})}
     if data is not None:
@@ -170,11 +170,15 @@ def http_json(url: str, body: dict[str, Any] | None = None, *, headers: dict[str
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.loads(resp.read().decode())
         except urllib.error.HTTPError as err:
+            detail = err.read()[:500].decode(errors="replace")
             if err.code in (429, 500, 502, 503, 504) and attempt < retries - 1:
-                time.sleep(delay)
+                # honour the server's requested wait (Retry-After header or JSON retryAfter), capped at 2 min
+                wait = err.headers.get("Retry-After") if err.headers else None
+                match = re.search(r'"retryAfter"\s*:\s*(\d+)', detail)
+                wait = float(wait) if wait and wait.isdigit() else float(match.group(1)) if match else delay
+                time.sleep(min(max(wait, delay), 120) + 1)
                 delay *= 2
                 continue
-            detail = err.read()[:500].decode(errors="replace")
             raise RuntimeError(f"HTTP {err.code} from {url.split('?')[0]}: {detail}") from err
         except urllib.error.URLError:
             if attempt < retries - 1:
