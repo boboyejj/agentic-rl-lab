@@ -1,4 +1,4 @@
-# Private data: never commit the real expert config, harvested corpus or extraction outputs.
+# Private data: never commit the harvested corpus or extraction outputs.
 # experts.toml is committed: names + public OpenAlex IDs only
 experts.saf.toml
 corpus/
