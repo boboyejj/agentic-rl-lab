@@ -109,3 +109,24 @@ name = "Rafael Gómez-Bombarelli"
 institution_hint = "Massachusetts Institute of Technology"
 themes = ["computational OSDA design", "ML for zeolite synthesis"]
 topic_terms = ["zeolite", "structure-directing", "machine learning", "template"]
+
+[[expert]]
+key = "zones"
+name = "Stacey I. Zones"
+institution_hint = "Chevron"
+themes = ["industrial zeolite synthesis", "OSDA chemistry", "scale-up"]
+topic_terms = ["zeolite", "molecular sieve", "structure-directing", "SSZ"]
+
+[[expert]]
+key = "mintova"
+name = "Svetlana Mintova"
+institution_hint = "Caen"
+themes = ["nanosized zeolites", "colloidal zeolite crystallization", "zeolite films"]
+topic_terms = ["zeolite", "nanosized", "nanocrystal", "colloidal", "crystallization"]
+
+[[expert]]
+key = "lobo"
+name = "Raul F. Lobo"
+institution_hint = "Delaware"
+themes = ["zeolite synthesis", "zeolite catalysis", "structure-directing agents"]
+topic_terms = ["zeolite", "molecular sieve", "catalys", "structure-directing"]

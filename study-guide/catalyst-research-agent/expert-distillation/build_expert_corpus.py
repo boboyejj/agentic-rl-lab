@@ -89,7 +89,9 @@ def classify_role(work: dict[str, Any]) -> str:
     title = (work.get("display_name") or "").strip()
     wtype = (work.get("type") or "").lower()
     venue = venue_name(work).lower()
-    if NON_CONTENT_TITLE.search(title) or wtype in {"erratum", "paratext", "retraction", "dataset"}:
+    title_l = title.lower()
+    if NON_CONTENT_TITLE.search(title) or wtype in {"erratum", "paratext", "retraction", "dataset"} \
+            or "cheminform" in f"{title_l} {venue}":
         return "other"
     if wtype == "dissertation":
         return "thesis"
@@ -171,7 +173,8 @@ def http_json(url: str, body: dict[str, Any] | None = None, *, headers: dict[str
                 time.sleep(delay)
                 delay *= 2
                 continue
-            raise
+            detail = err.read()[:500].decode(errors="replace")
+            raise RuntimeError(f"HTTP {err.code} from {url.split('?')[0]}: {detail}") from err
         except urllib.error.URLError:
             if attempt < retries - 1:
                 time.sleep(delay)
@@ -301,15 +304,27 @@ def iter_author_works(fetch: Fetcher, author_ids: list[str], from_year: int | No
     filt = "author.id:" + "|".join(author_ids)
     if from_year:
         filt += f",from_publication_date:{from_year}-01-01"
-    cursor, seen = "*", 0
-    while cursor and seen < max_works:
-        res = fetch("/works", {"filter": filt, "per-page": 200, "cursor": cursor, "select": WORK_FIELDS})
-        for work in res.get("results", []):
+    # Cursor paging needs an OpenAlex API key; page numbers work without one (up to 10,000 results).
+    use_cursor = bool(os.getenv("OPENALEX_API_KEY"))
+    cursor, page, seen = "*", 1, 0
+    while seen < max_works:
+        params = {"filter": filt, "per-page": 200, "select": WORK_FIELDS}
+        params.update({"cursor": cursor} if use_cursor else {"page": page})
+        res = fetch("/works", params)
+        results = res.get("results", [])
+        for work in results:
             yield work
             seen += 1
             if seen >= max_works:
                 return
-        cursor = (res.get("meta") or {}).get("next_cursor")
+        if use_cursor:
+            cursor = (res.get("meta") or {}).get("next_cursor")
+            if not cursor:
+                return
+        else:
+            page += 1
+            if len(results) < 200 or page * 200 > 10_000:
+                return
 
 
 def make_record(work: dict[str, Any], expert: Expert) -> dict[str, Any]:
@@ -373,7 +388,44 @@ def harvest(fetch: Fetcher, settings: dict[str, Any], experts: list[Expert],
                 corpus[key] = rec
             n += 1
         print(f"[ok] {e.key}: {n} works")
-    return corpus
+    return dedupe_by_title(corpus)
+
+
+REPOSITORY_VENUES = ("hal", "arxiv", "chemrxiv", "zenodo", "research square", "ssrn", "repository", "figshare")
+
+
+def dedupe_by_title(corpus: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Merge copies of the same work (repository copies, preprints) by normalized title and year (+-1).
+
+    The publisher version is kept; a free PDF link from a repository copy is kept if the publisher
+    version is closed (a legal open-access copy, e.g. on HAL)."""
+    def is_repo(r: dict[str, Any]) -> bool:
+        return not r["doi"] or any(v in (r["venue"] or "").lower() for v in REPOSITORY_VENUES)
+
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for r in corpus.values():
+        key = re.sub(r"[^a-z0-9]", "", (r["title"] or "").lower())
+        groups.setdefault(key if len(key) > 25 else f"__{r['openalex_id']}", []).append(r)
+    out: dict[str, dict[str, Any]] = {}
+    for recs in groups.values():
+        recs.sort(key=lambda r: (is_repo(r), r["role"] == "other", -(r["cited_by_count"] or 0)))
+        keep = recs[0]
+        keep.setdefault("duplicates", [])
+        for dup in recs[1:]:
+            if abs((dup["year"] or 0) - (keep["year"] or 0)) > 1:
+                out[dup["doi"] or dup["openalex_id"]] = dup
+                continue
+            merge_record(keep, dup)
+            keep["duplicates"].append(dup["doi"] or dup["openalex_id"])
+            if not keep["is_oa"] and dup["is_oa"]:
+                for k in ("is_oa", "oa_status", "oa_pdf_url", "oa_landing_url", "license"):
+                    keep[k] = dup[k]
+            if len(keep["abstract"]) < len(dup["abstract"]):
+                keep["abstract"] = dup["abstract"]
+            if keep["role"] == "primary" and dup["role"] == "opinion":
+                keep["role"] = "opinion"
+        out[keep["doi"] or keep["openalex_id"]] = keep
+    return out
 
 
 def write_outputs(corpus: dict[str, dict[str, Any]], experts: list[Expert], out: Path) -> None:
