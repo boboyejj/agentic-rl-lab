@@ -10,10 +10,13 @@ Code for this file is in [`expert-distillation/`](./expert-distillation/):
 |---|---|
 | `build_expert_corpus.py` | author names → OpenAlex profiles → all works, classified as *primary* / *opinion* (review, perspective, account) / *thesis*, with abstracts, OA links and licences |
 | `rubric_tools.py` | opinion docs → rubric items and reviewer questions (each with a verified quote and DOI) → Tournament-GRPO judge format; blinded A/B sheets for you and a colleague; judge–human agreement |
+| `find_published_critiques.py` | OpenAlex search for "Comment on"/"Reply to" exchanges (and retractions) on your themes, linked to the criticized paper: the independent expert test set |
+| `planted_flaws.py` | flaw library (14 flaws across 8 dimensions) + mini-proposals built from real papers with known flaws inserted, plus clean controls |
+| `critique_eval.py` | generate critiques with any OpenAI-compatible model (with/without rubric); extract issues from published comments; score planted-flaw recall, false alarms, published-critique recall and citation validity |
 | `experts.example.toml` | zeolite expert candidates (verify before use) |
 | `experts.saf.example.toml` | SAF expert candidates for the later extension ([saf-plan.md](./saf-plan.md)) |
 
-Both scripts use only the Python standard library and have an offline `selftest`.
+All scripts use only the Python standard library and have an offline `selftest`.
 
 ---
 
@@ -165,10 +168,18 @@ Without an outside reviewer, everything could become circular: an LLM extracts c
 
 | Source | What it gives | How to find it |
 |---|---|---|
-| **Comment / Reply exchanges** ("Comment on '…'", "Reply to 'Comment on …'") | an expert's specific objections to a specific paper, plus the authors' answer | OpenAlex title search on your themes; follow the referenced work (`find_published_critiques.py`, planned) |
+| **Comment / Reply exchanges** ("Comment on '…'", "Reply to 'Comment on …'") | an expert's specific objections to a specific paper, plus the authors' answer | OpenAlex title search on your themes; follow the referenced work (`find_published_critiques.py`) |
 | **Published peer-review files** (e.g. *Nature Communications*, some other journals with transparent review) | anonymous referee reports on the submitted version, with author responses | links on the article page; check the licence |
 | **Explicit criticism inside reviews/perspectives** by the listed experts ("…however, thickness was inferred only from…") | attributable critiques of earlier approaches | `questions` jobs in `rubric_tools.py` already surface many of these |
 | **Corrections and retractions** on your themes | what went wrong, according to the record | OpenAlex `type:erratum` / retraction notices |
+
+Commands:
+```bash
+python find_published_critiques.py search --out critiques/ --terms zeolite "zeolite membrane" "molecular sieve" nanosheet
+python critique_eval.py extract-issues --critiques critiques/critiques.jsonl --out critiques/with_issues.jsonl --model qwen3:14b
+#   check every issue list by hand; set "checked": true
+python critique_eval.py from-published --critiques critiques/with_issues.jsonl --out published_items.jsonl
+```
 
 Test: give the agent the original paper's abstract (or a mini-proposal derived from it) and score **recall of the issues the published critique raised** (a judge matches paraphrases; you check a sample). Aim for **30–60 items**. Keep them strictly out of training data, split by original paper.
 
@@ -295,17 +306,33 @@ Start RL with B-qa (fully verifiable). Add B-critique only after the judge passe
 
 ---
 
-## 9. First steps (this week)
+## 9. Six-week sprint (v1), before any training
 
-1. `python build_expert_corpus.py selftest` and `python rubric_tools.py selftest` (offline).
-2. Copy `experts.example.toml` → `experts.toml`; fill in the tier-1 entry (authors closest to your work) and remove/add candidates.
-3. Run `resolve` from a network that can reach `api.openalex.org` (it was blocked from the cloud session used to write this). Confirm IDs.
-4. Run `harvest`; open `summary.csv`; score candidates (section 2.1); trim to 10–15.
-5. Sanity-check the shortlist yourself: does it cover all 8 rubric dimensions, more than one school of thought, and at least one industrial perspective?
-6. Pick 20 opinion docs you can legally use in full text; run `prompts` → `run` (local model) → `merge`; read every accepted item. This tells you how well extraction works before you scale.
-7. Write 10 planted-flaw mini-proposals by hand to fix the format, before generating more.
+| Week | Work | Done when |
+|---|---|---|
+| 1 | `resolve` + `harvest`; score candidates; shortlist 10–15 groups | shortlist frozen |
+| 2 | **Pilot**: rubric extraction on 20 full-text opinion docs; read every accepted item | ≥ 60 % of items useful to you (else fix prompts) |
+| 3 | extraction on all opinion docs → canonical bank (40–80 items); `find_published_critiques.py search` | draft bank; candidate critique list |
+| 4 | your second pass (+ colleague on ~20 items); freeze `rubric_bank_v1`; check issues for 30–60 published critiques; `planted_flaws.py make --n 60` | v1 frozen; both test sets ready |
+| 5 | baselines with `critique_eval.py`: plain vs rubric-guided critiques; label 50+ blinded A/B pairs (`rubric_tools.py pairs`), colleague on ~30 | metrics + κ |
+| 6 | **Decision gate** (below) | go / no-go for SFT on Tinker |
 
----
+**Decision gate (all three):**
+1. Rubric-guided critiques beat plain ones on planted-flaw recall *and* published-critique recall, without more false alarms.
+2. The judge agrees with your blinded labels at κ ≥ 0.5 (and you and your colleague agree at least as well).
+3. Citation valid rate ≥ 95 % on rubric-guided critiques.
+
+If it passes, draft 300–600 critiques with the teacher (rubric + review passages in context), check them (~2 min each), and start SFT. If not, the failing metric tells you what to fix: the rubric (1), the judge (2) or retrieval/citation handling (3).
+
+### Commands for the evaluation loop
+```bash
+python planted_flaws.py make --works corpus/works.jsonl --out planted.jsonl --n 60
+python critique_eval.py generate --items planted.jsonl --out out_plain.jsonl --model qwen3:14b
+python critique_eval.py generate --items planted.jsonl --out out_rubric.jsonl --model qwen3:14b --rubric-bank rubric_bank_v1.jsonl
+python critique_eval.py score --items planted.jsonl --outputs out_plain.jsonl  --works corpus/works.jsonl --judge-model qwen3:32b --report rep_plain.json
+python critique_eval.py score --items planted.jsonl --outputs out_rubric.jsonl --works corpus/works.jsonl --judge-model qwen3:32b --report rep_rubric.json
+```
+Run the same with `published_items.jsonl`. Check ~10 judge verdicts by hand each time; the regex scores are only a cross-check.
 
 ## 10. Checklist before anything goes into training
 
