@@ -6,3 +6,5 @@ corpus_*/
 *.jsonl
 pairs*.csv
 *.key.json
+# pilot outputs (contain abstract quotes); keep in the session only
+pilot/

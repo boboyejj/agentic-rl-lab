@@ -81,6 +81,7 @@ OPINION_VENUE_PATTERNS = [
     r"annual review", r"nature reviews", r"current opinion", r"trends in",
     r"progress in materials science", r"catalysis reviews", r"perspective",
 ]
+SCRAPED_ABSTRACT = re.compile(r"ADVERTISEMENT|RETURN TO ISSUE|View Author Information|Request reuse permissions|Altmetric", re.I)
 NON_CONTENT_TITLE = re.compile(r"^(erratum|correction|corrigendum|retraction|editorial|front cover|"
                                r"back cover|inside cover|cover picture|frontispiece)\b", re.I)
 
@@ -332,6 +333,8 @@ def make_record(work: dict[str, Any], expert: Expert) -> dict[str, Any]:
     oa = work.get("open_access") or {}
     best = work.get("best_oa_location") or {}
     abstract = abstract_from_inverted_index(work.get("abstract_inverted_index"))
+    if SCRAPED_ABSTRACT.search(abstract):
+        abstract = ""  # publisher web-page text scraped into the abstract field, not an abstract
     title = work.get("display_name") or ""
     authors = [(a.get("author") or {}).get("display_name") for a in work.get("authorships") or []]
     return {
